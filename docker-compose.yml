@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  development-rwsols:
+    build: ./build
+#    image: ex0nuss/plex-export-docker
+    container_name: development-rwsols
+#    restart: unless-stopped
+    network_mode: host
+#    ports:
+#      - 9999:81
+#    volumes:
+#      - 
+    environment:
+      - APACHE2_PORT=81
+      - PASSPHRASE=Test
+      - RWSOLS_COMPUTER_NAME="HansPc","OMV-nas"
+      - RWSOLS_COMPUTER_MAC="54:04:A6:3C:B2:D5","AA:AA:AA"
+      - RWSOLS_COMPUTER_IP="192.168.178.45","192.168.178.100"
+    labels:
+      - com.centurylinklabs.watchtower.enable=false
+
+### ENV-file presets ###
+# Europe/Berlin
+# 996
