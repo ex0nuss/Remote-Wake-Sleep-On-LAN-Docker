@@ -7,18 +7,12 @@ services:
     container_name: development-rwsols
 #    restart: unless-stopped
     network_mode: host
-#    ports:
-#      - 9999:81
-#    volumes:
-#      - 
     environment:
-      - APACHE2_PORT=81
-      - PASSPHRASE=Test
-      - RWSOLS_COMPUTER_NAME="HansPc","OMV-nas"
-      - RWSOLS_COMPUTER_MAC="54:04:A6:3C:B2:D5","AA:AA:AA"
-      - RWSOLS_COMPUTER_IP="192.168.178.45","192.168.178.100"
-    labels:
-      - com.centurylinklabs.watchtower.enable=false
+      - APACHE2_PORT=9898
+      - PASSPHRASE=MyPassword
+      - RWSOLS_COMPUTER_NAME="Pc1","Pc2"
+      - RWSOLS_COMPUTER_MAC="XX:XX:XX:XX:XX:XX","XX:XX:XX:XX:XX:XX"
+      - RWSOLS_COMPUTER_IP="192.168.1.45","192.168.1.50"
 
 ### ENV-file presets ###
 # Europe/Berlin

@@ -24,16 +24,10 @@ search_and_replace RWSOLS_HASH $RWSOLS_HASH
 
 
 #APACHE2 port mapping
-echo "search_and_replace port 80 with $APACHE2_PORT"
-sed -i 's|'80'|'$APACHE2_PORT'|g' '/etc/apache2/ports.conf'
+echo "search_and_replace port 8080 with $APACHE2_PORT"
+sed -i 's|'8080'|'$APACHE2_PORT'|g' '/etc/apache2/ports.conf'
 
 
 #Starting apache2
-service apache2 reload
-exec apache2-foreground
-
-
-#TODO
-# 1. PHP-Arrays mit env vars testen: z.B. RWSOLS_COMPUTER_NAME="PcTest","PcTest1"
-# 2. Für alle Config-Settings Env vars erstellen
-# 3. Hash for Keyphrase erstellen
+echo "Starting Apache2: /usr/sbin/apache2ctl -D FOREGROUND"
+/usr/sbin/apache2ctl -D FOREGROUND
