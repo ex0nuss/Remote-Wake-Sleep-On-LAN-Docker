@@ -3,9 +3,9 @@ version: "3"
 services:
   development-rwsols:
     build: ./build
-#    image: ex0nuss/plex-export-docker
+    image: ex0nuss/remote-wake-sleep-on-lan-docker
     container_name: development-rwsols
-#    restart: unless-stopped
+    restart: unless-stopped
     network_mode: host
     environment:
       - APACHE2_PORT=9898
