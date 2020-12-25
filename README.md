@@ -51,7 +51,7 @@ Parameter / Env var | Optional | Default value | Description |
 `RWSOLS_SLEEP_PORT` | yes | 7760 | This is the Port being used by the Windows SleepOnLan Utility to initiate a Sleep State (**not necessary for WOL only**)
 `RWSOLS_SLEEP_CMD` | yes | suspend | Command to be issued by the windows sleeponlan utility (**not necessary for WOL only**)
 
-#### Configuring the destination computer name, MAC and IP
+#### Explanation: Configuring the destination computer name, MAC and IP
 To configure the computers we want to wake, we will you these three environment variables:
 - `RWSOLS_COMPUTER_NAME`
 - `RWSOLS_COMPUTER_MAC`
