@@ -8,7 +8,7 @@ A docker image of [sciguy14/Remote-Wake-Sleep-On-LAN-Server](https://github.com/
 ![preview img](IMG_webinterface_preview.png)
 
 **Information:**
-- You don't need any additinal software to wake your client via WOL.
+- You don't need any additonal software to wake your client via WOL.
 - Additional software is needed to sleep/shutdown your client via this webinterface.
 
 ## Usage
