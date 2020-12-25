@@ -50,7 +50,7 @@ docker run -d \
 Container images are configured using parameters passed at runtime (such as those above). There is no config file needed.
 
 Parameter / Env var | Optional | Default value | Description
------------- | ------------- | ------------- | -------------
+------------ | :-------------: | ------------- | -------------
 `network_mode: host` | no | / | The container’s network stack is not isolated from the Docker host. This is necessary to send WOL packages from a container. The port of the webserver is configures via `APACHE2_PORT`.
 `APACHE2_PORT` | yes | 8080 | Port of the webinterface.
 `PASSPHRASE` | yes | admin | Password of the webinterface.
@@ -66,6 +66,8 @@ To configure the computers, we will use these three environment variables:
 - `RWSOLS_COMPUTER_MAC`
 - `RWSOLS_COMPUTER_IP`
 
+<br/>
+
 Let's say we want to wake 2 computers with the following configurations:
 1. PC1
    - Displayname: PC of Mark
@@ -76,11 +78,15 @@ Let's say we want to wake 2 computers with the following configurations:
    - MAC address: 59:3c:45:3c:30:f6
    - IP address: 192.168.1.177
 
+<br/>
+
 To configure the env vars it's easier to imagine them in a table:
 >RWSOLS_COMPUTER_NAME | RWSOLS_COMPUTER_MAC | RWSOLS_COMPUTER_IP
 >------------ | ------------- | -------------
 >PC of Mark | 24:00:dd:5a:21:04 | 192.168.1.146
 >PC of John | 59:3c:45:3c:30:f6 | 192.168.1.177
+
+<br/>
 
 Now you just format the table in an array:
 >```
