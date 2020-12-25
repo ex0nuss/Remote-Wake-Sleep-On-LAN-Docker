@@ -87,4 +87,4 @@ Now you just format the table in an array:
 >      - RWSOLS_COMPUTER_MAC="24:00:dd:5a:21:04","59:3c:45:3c:30:f6"
 >      - RWSOLS_COMPUTER_IP="192.168.1.146","192.168.1.177"
 >```
-It's important to use the format as show above: `"XXX","XXX"`
+>It's important to use the format as show above: `"XXX","XXX"`
