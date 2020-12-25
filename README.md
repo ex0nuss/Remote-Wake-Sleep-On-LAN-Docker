@@ -48,6 +48,7 @@ docker run -d \
 
 ## Parameters and environment variables
 Container images are configured using parameters passed at runtime (such as those above). There is no config file needed.
+
 Parameter / Env var | Optional | Default value | Description
 ------------ | ------------- | ------------- | -------------
 `network_mode: host` | no | / | The container’s network stack is not isolated from the Docker host. This is necessary to send WOL packages from a container. The port of the webserver is configures via `APACHE2_PORT`.
