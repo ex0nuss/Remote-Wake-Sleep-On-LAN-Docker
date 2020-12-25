@@ -1,10 +1,13 @@
 # Remote-Wake-Sleep-On-LAN-Docker
 A docker image of [sciguy14/Remote-Wake-Sleep-On-LAN-Server](https://github.com/sciguy14/Remote-Wake-Sleep-On-LAN-Server)
 
-> The Remote Wake/Sleep-on-LAN Server (RWSOLS) is a simple webapp that runs on Docker to remotely power up any computer via WOL. This is necesarry, since WOL packages (Layer 2) cannot be forwarded via a normal VPN (Layer 3).
+> The Remote Wake/Sleep-on-LAN Server (RWSOLS) is a simple webapp that runs on Docker to remotely power up any computer via WOL. </br> This is necesarry, since WOL packages (Layer&nbsp;2) cannot be forwarded via a normal VPN (Layer&nbsp;3).
 
 ## Usage
 Here are some example snippets to help you get started creating a container.
+
+![preview img](IMG_webinterface_preview.png)
+
 
 ### docker-compose (recommended)
 ```
@@ -73,7 +76,7 @@ To configure the env vars it's easire to image it in a table:
 >PC of Mark | 24:00:dd:5a:21:04 | 192.168.1.146
 >PC of John | 59:3c:45:3c:30:f6 | 192.168.1.177
 
-Now you just format them in an array. 
+Now you just format the table in an array. 
 >```
 >      - RWSOLS_COMPUTER_NAME="PC of Mark","PC of John"
 >      - RWSOLS_COMPUTER_MAC="24:00:dd:5a:21:04","59:3c:45:3c:30:f6"
