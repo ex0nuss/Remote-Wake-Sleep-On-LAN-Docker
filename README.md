@@ -15,7 +15,7 @@ A docker image of [sciguy14/Remote-Wake-Sleep-On-LAN-Server](https://github.com/
 Here are some example snippets to help you get started creating a container.
 
 ### docker-compose (recommended)
-```
+```YAML
 version: "3"
 
 services:
@@ -33,7 +33,7 @@ services:
 ```
 
 ### docker CLI
-``` 
+```
 docker run -d \
   --name=frontend-rwsols \
   --network="host" \
