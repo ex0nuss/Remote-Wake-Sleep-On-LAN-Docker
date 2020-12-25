@@ -20,7 +20,7 @@ version: "3"
 
 services:
   frontend-rwsols:
-    image: ex0nuss/XXX
+    image: ex0nuss/remote-wake-sleep-on-lan-docker
     container_name: frontend-rwsols
     restart: unless-stopped
     network_mode: host
@@ -43,7 +43,7 @@ docker run -d \
   -e RWSOLS_COMPUTER_MAC="XX:XX:XX:XX:XX:XX","XX:XX:XX:XX:XX:XX" \
   -e RWSOLS_COMPUTER_IP="192.168.1.45","192.168.1.50" \
   --restart unless-stopped \
-  image: ex0nuss/XXX
+  ex0nuss/remote-wake-sleep-on-lan-docker
 ```
 
 ## Parameters and environment variables
