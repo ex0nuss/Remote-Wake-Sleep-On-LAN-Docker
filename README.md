@@ -17,7 +17,7 @@ Here are some example snippets to help you get started creating a container.
 version: "3"
 
 services:
-  development-rwsols:
+  frontend-rwsols:
     image: ex0nuss/XXX
     container_name: frontend-rwsols
     restart: unless-stopped
