@@ -60,12 +60,12 @@ Parameter / Env var | Optional | Default value | Description |
 `RWSOLS_SLEEP_CMD` | yes | suspend | Command to be issued by the windows sleeponlan utility (**not necessary for WOL only**)
 
 #### Explanation: Configuring the destination computer name, MAC and IP
-To configure the computers we want to wake, we will you these three environment variables:
+To configure the computers, we will use these three environment variables:
 - `RWSOLS_COMPUTER_NAME`
 - `RWSOLS_COMPUTER_MAC`
 - `RWSOLS_COMPUTER_IP`
 
-Let's say we want to wake 2 computer in the end with the following configurations:
+Let's say we want to wake 2 computers with the following configurations:
 1. PC1
    - Displayname: PC of Mark
    - MAC address: 24:00:dd:5a:21:04
@@ -75,7 +75,7 @@ Let's say we want to wake 2 computer in the end with the following configuration
    - MAC address: 59:3c:45:3c:30:f6
    - IP address: 192.168.1.177
 
-To configure the env vars it's easire to image it in a table:
+To configure the env vars it's easier to imagine them in a table:
 >RWSOLS_COMPUTER_NAME | RWSOLS_COMPUTER_MAC | RWSOLS_COMPUTER_IP
 >------------ | ------------- | -------------
 >PC of Mark | 24:00:dd:5a:21:04 | 192.168.1.146
