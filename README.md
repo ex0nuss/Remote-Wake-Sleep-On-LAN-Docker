@@ -81,7 +81,7 @@ Let's say we want to wake 2 computers with the following configurations:
 <br/>
 
 To configure the env vars it's easier to imagine them in a table:
->RWSOLS_COMPUTER_NAME | RWSOLS_COMPUTER_MAC | RWSOLS_COMPUTER_IP
+>`RWSOLS_COMPUTER_NAME` | `RWSOLS_COMPUTER_MAC` | `RWSOLS_COMPUTER_IP`
 >------------ | ------------- | -------------
 >PC of Mark | 24:00:dd:5a:21:04 | 192.168.1.146
 >PC of John | 59:3c:45:3c:30:f6 | 192.168.1.177
@@ -94,4 +94,4 @@ Now you just format the table in an array:
 >      - RWSOLS_COMPUTER_MAC="24:00:dd:5a:21:04","59:3c:45:3c:30:f6"
 >      - RWSOLS_COMPUTER_IP="192.168.1.146","192.168.1.177"
 >```
->It's important to use the format as show above: `Env_var="XXX","XXX"`
+>It's important to use the format as shown: `Env_var="XXX","XXX"`
