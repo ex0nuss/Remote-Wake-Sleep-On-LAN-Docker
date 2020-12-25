@@ -75,7 +75,7 @@ To configure the env vars it's easire to image it in a table:
 >PC of Mark | 24:00:dd:5a:21:04 | 192.168.1.146
 >PC of John | 59:3c:45:3c:30:f6 | 192.168.1.177
 
-Now you just format the table in an array. 
+Now you just format the table in an array:
 >```
 >      - RWSOLS_COMPUTER_NAME="PC of Mark","PC of John"
 >      - RWSOLS_COMPUTER_MAC="24:00:dd:5a:21:04","59:3c:45:3c:30:f6"
