@@ -82,11 +82,24 @@ Let's say we want to wake 2 computers with the following configurations:
 
 <br/>
 
-To configure the env vars it's easier to imagine them in a table:
->`RWSOLS_COMPUTER_NAME` | `RWSOLS_COMPUTER_MAC` | `RWSOLS_COMPUTER_IP`
->------------ | ------------- | -------------
->PC of Mark | 24:00:dd:5a:21:04 | 192.168.1.146
->PC of John | 59:3c:45:3c:30:f6 | 192.168.1.177
+To configure the env vars it's easier to imagine them in a **vertical** table:
+><table>
+>  <tr>
+>    <th><code>RWSOLS_COMPUTER_NAME</code></th>
+>    <td>PC of Mark</td>
+>    <td>PC of John</td>
+>  </tr>
+>  <tr>
+>    <th><code>RWSOLS_COMPUTER_MAC</code></th>
+>    <td>24:00:dd:5a:21:04</td>
+>    <td>59:3c:45:3c:30:f6</td>
+>  </tr>
+>  <tr>
+>    <th><code>RWSOLS_COMPUTER_IP</code></th>
+>    <td>192.168.1.146</td>
+>    <td>192.168.1.177</td>
+>  </tr>
+></table>
 
 <br/>
 
