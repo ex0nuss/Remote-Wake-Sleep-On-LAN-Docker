@@ -55,7 +55,7 @@ Parameter / Env var | Optional | Default value | Description
 ------------ | :-------------: | ------------- | -------------
 `network_mode: host` | no | / | The container’s network stack is not isolated from the Docker host. This is necessary to send WOL packages from a container. The port of the webserver is configures via `APACHE2_PORT`.
 `APACHE2_PORT` | yes | 8080 | Port of the webinterface.
-`PASSPHRASE` | yes | admin | Password of the webinterface.
+`PASSPHRASE` | yes | admin | Password of the webinterface. If no password is specified, you don't need a password to wake a PC.
 `RWSOLS_COMPUTER_NAME` | no | / | Displaynames for the computers (**array**)
 `RWSOLS_COMPUTER_MAC` | no | / | MAC addresses for the computers (**array**)
 `RWSOLS_COMPUTER_IP` | no | / | IP addresses for the computers (**array**)
