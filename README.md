@@ -82,7 +82,7 @@ Let's say we want to wake 2 computers with the following configurations:
 
 <br/>
 
-To configure the env vars it's easier to imagine them in a **vertical** table:
+To configure the env vars it's easier to arrange them in a **vertical** table:
 ><table>
 >  <tr>
 >    <th><code>RWSOLS_COMPUTER_NAME</code></th>
