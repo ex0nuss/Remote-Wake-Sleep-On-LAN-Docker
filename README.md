@@ -3,6 +3,8 @@ A docker image of [sciguy14/Remote-Wake-Sleep-On-LAN-Server](https://github.com/
 
 Dockerhub: https://hub.docker.com/r/ex0nuss/remote-wake-sleep-on-lan-docker
 
+Weekly updated :)
+
 ## Summary
 
 > The Remote Wake/Sleep-on-LAN Server (RWSOLS) is a simple webapp that runs on Docker to remotely power up any computer via WOL. </br> This is necesarry, since WOL packages (Layer&nbsp;2) cannot be forwarded via a normal VPN (Layer&nbsp;3).
