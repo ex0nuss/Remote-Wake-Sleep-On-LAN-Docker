@@ -43,9 +43,9 @@ docker run -d \
   --network="host" \
   -e APACHE2_PORT=8080 \
   -e PASSPHRASE=MyPassword \
-  -e RWSOLS_COMPUTER_NAME="Pc1","Pc2" \
-  -e RWSOLS_COMPUTER_MAC="XX:XX:XX:XX:XX:XX","XX:XX:XX:XX:XX:XX" \
-  -e RWSOLS_COMPUTER_IP="192.168.1.45","192.168.1.50" \
+  -e 'RWSOLS_COMPUTER_NAME="Pc1","Pc2"' \
+  -e 'RWSOLS_COMPUTER_MAC="XX:XX:XX:XX:XX:XX","XX:XX:XX:XX:XX:XX"' \
+  -e 'RWSOLS_COMPUTER_IP="192.168.1.45","192.168.1.50"' \
   --restart unless-stopped \
   ex0nuss/remote-wake-sleep-on-lan-docker
 ```
